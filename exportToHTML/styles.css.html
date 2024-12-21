@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>styles.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bdbdbd;}
+.s1 { color: #c191ff;}
+.s2 { color: #d0d0d0;}
+.s3 { color: #6c95eb;}
+.s4 { color: #ed94c0;}
+.s5 { color: #f0f0f0;}
+.s6 { color: #adeb96;}
+.s7 { color: #c9a26d;}
+</style>
+</head>
+<body bgcolor="#262626">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+styles.css</font>
+</center></td></tr></table>
+<pre><span class="s0">.</span><span class="s1">container</span><span class="s0">{</span>
+    
+<span class="s0">}</span>
+<span class="s1">body</span><span class="s0">, </span><span class="s1">h1</span><span class="s0">, </span><span class="s1">ul</span><span class="s0">,</span><span class="s1">li</span><span class="s0">, </span><span class="s1">p</span><span class="s0">{</span>
+<span class="s3">margin </span><span class="s0">:</span><span class="s4">0</span><span class="s0">;</span>
+    <span class="s3">padding</span><span class="s0">:</span><span class="s4">0</span><span class="s0">;</span>
+    <span class="s3">list-style</span><span class="s0">: </span><span class="s5">none</span><span class="s0">;</span>
+    <span class="s3">box-sizing</span><span class="s0">: </span><span class="s5">border-box</span><span class="s0">;</span>
+    <span class="s3">font-family</span><span class="s0">: </span><span class="s1">Arial</span><span class="s0">, </span><span class="s5">sans-serif</span><span class="s0">;</span>
+<span class="s0">}</span>
+ 
+<span class="s0">.</span><span class="s1">flex-container-subjects</span><span class="s0">{</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">flex</span><span class="s0">;</span>
+    <span class="s3">flex-wrap</span><span class="s0">: </span><span class="s5">wrap</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">justify-content</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">gap</span><span class="s0">: </span><span class="s4">50</span><span class="s5">px</span><span class="s0">;</span>
+    <span class="s3">margin</span><span class="s0">: </span><span class="s4">0 40</span><span class="s5">px</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">flex-container-subjects li</span><span class="s0">{</span>
+    <span class="s3">background-color</span><span class="s0">: </span><span class="s6">#4bb69b</span><span class="s0">;</span>
+    <span class="s3">color</span><span class="s0">: </span><span class="s5">white</span><span class="s0">;</span>
+    <span class="s3">padding</span><span class="s0">: </span><span class="s4">15</span><span class="s5">px</span><span class="s0">;</span>
+    <span class="s3">border-radius</span><span class="s0">: </span><span class="s4">10</span><span class="s5">px</span><span class="s0">;</span>
+    <span class="s3">width</span><span class="s0">: </span><span class="s4">250</span><span class="s5">px</span><span class="s0">;</span>
+    <span class="s3">height</span><span class="s0">: </span><span class="s4">250</span><span class="s5">px</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">flex</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">justify-content</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s1">@media </span><span class="s5">only screen </span><span class="s1">and </span><span class="s0">(</span><span class="s3">min-width</span><span class="s0">:</span><span class="s4">600</span><span class="s5">px</span><span class="s0">) {</span>
+    <span class="s0">.</span><span class="s1">flex-container-subjects li</span><span class="s0">{</span>
+        <span class="s3">background-color</span><span class="s0">: </span><span class="s5">lightseagreen</span><span class="s0">;</span>
+    <span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">flex-container-nav</span><span class="s0">{</span>
+    <span class="s3">justify-content</span><span class="s0">: </span><span class="s5">flex-start</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">flex</span><span class="s0">;</span>
+    <span class="s3">align-content</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">flex-direction</span><span class="s0">: </span><span class="s5">column</span><span class="s0">;</span>
+    <span class="s3">list-style-type</span><span class="s0">: </span><span class="s5">none</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s1">#close-nav-button</span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s0">: </span><span class="s4">5</span><span class="s0">%;</span>
+    <span class="s3">background-color</span><span class="s0">: </span><span class="s5">salmon</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s1">@media </span><span class="s5">only screen </span><span class="s1">and </span><span class="s0">(</span><span class="s3">min-width</span><span class="s0">:</span><span class="s4">768</span><span class="s5">px</span><span class="s0">) {</span>
+    <span class="s1">#nav-button</span><span class="s0">{</span>
+        <span class="s3">display</span><span class="s0">: </span><span class="s5">none</span><span class="s0">;</span>
+    <span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s1">#close-nav-button</span><span class="s0">{</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">none</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">flex-container-nav</span><span class="s0">.</span><span class="s1">hide-mobile</span><span class="s0">{</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">flex</span><span class="s0">;</span>
+    <span class="s3">flex-direction</span><span class="s0">: </span><span class="s5">row</span><span class="s0">;</span>
+    <span class="s3">padding</span><span class="s0">: </span><span class="s4">1</span><span class="s5">rem</span><span class="s0">;</span>
+    <span class="s3">background-color</span><span class="s0">: </span><span class="s5">black</span><span class="s0">;</span>
+    <span class="s3">position</span><span class="s0">: </span><span class="s5">relative</span><span class="s0">;</span>
+    <span class="s3">height</span><span class="s0">: </span><span class="s5">unset</span><span class="s0">;</span>
+    <span class="s3">width</span><span class="s0">: </span><span class="s4">100</span><span class="s0">%;</span>
+    <span class="s3">top</span><span class="s0">: </span><span class="s4">0</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">nav-item </span><span class="s0">{</span>
+    <span class="s3">color</span><span class="s0">: </span><span class="s5">white</span><span class="s0">; </span>
+    <span class="s3">letter-spacing</span><span class="s0">: </span><span class="s4">2</span><span class="s5">px</span><span class="s0">; </span>
+    <span class="s3">word-spacing</span><span class="s0">: </span><span class="s4">5</span><span class="s5">px</span><span class="s0">; </span>
+<span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">flex-container-nav li a </span><span class="s0">{</span>
+    <span class="s3">color</span><span class="s0">: </span><span class="s5">white</span><span class="s0">; </span>
+    <span class="s3">letter-spacing</span><span class="s0">: </span><span class="s4">2</span><span class="s5">px</span><span class="s0">; </span>
+    <span class="s3">word-spacing</span><span class="s0">: </span><span class="s4">5</span><span class="s5">px</span><span class="s0">; </span>
+    <span class="s3">padding</span><span class="s0">: </span><span class="s4">10</span><span class="s5">px </span><span class="s4">20</span><span class="s5">px</span><span class="s0">; </span>
+    <span class="s3">text-decoration</span><span class="s0">: </span><span class="s5">none</span><span class="s0">; </span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">inline-block</span><span class="s0">; </span>
+<span class="s0">}</span>
+
+<span class="s1">h1 </span><span class="s0">{</span>
+    <span class="s3">text-align</span><span class="s0">: </span><span class="s5">center</span><span class="s0">; </span>
+    <span class="s3">font-size</span><span class="s0">: </span><span class="s4">3</span><span class="s5">rem</span><span class="s0">; </span>
+    <span class="s3">font-family</span><span class="s0">: </span><span class="s7">'Arial'</span><span class="s0">, </span><span class="s5">sans-serif</span><span class="s0">; </span>
+    <span class="s3">color</span><span class="s0">: </span><span class="s6">#333</span><span class="s0">; </span>
+<span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">flex-container-images</span><span class="s0">{</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">flex</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">justify-content</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">gap</span><span class="s0">: </span><span class="s4">20</span><span class="s5">px</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s1">p</span><span class="s0">{</span>
+    <span class="s3">text-align</span><span class="s0">: </span><span class="s5">start</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">flex</span><span class="s0">;</span>
+    <span class="s3">flex-direction</span><span class="s0">: </span><span class="s5">column</span><span class="s0">;</span>
+    <span class="s3">white-space</span><span class="s0">: </span><span class="s5">pre-wrap</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">justify-content</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">img-wrapper</span><span class="s0">{</span>
+    <span class="s3">align-items</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">justify-content</span><span class="s0">: </span><span class="s5">center</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s0">: </span><span class="s5">flex</span><span class="s0">;</span>
+    <span class="s3">flex-direction</span><span class="s0">: </span><span class="s5">column</span><span class="s0">;</span>
+   <span class="s0">}</span>
+</pre>
+</body>
+</html>

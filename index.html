@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>קרנות הפנסיה של הראל</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <!-- CSS של Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JS של Bootstrap (לפתיחת המודל) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <!-- JS -->
+    <script src="jScripts/javascript.js"></script>
+</head>
+<body>
+<div id="container">
+    <nav>
+        <button id="nav-button" class="btn-mobile" onclick="toggleNav()">
+            <img src="images/nav-icon.svg" alt="תפריט">
+        </button>
+        <img src="images/Harel_Logo.png" class="header-logo" />
+        <ul id="main-nav" class="container-nav hide-mobile">
+            <button id="close-nav-button" class="btn-mobile" onclick="toggleNav()">
+                <img src="images/nav-close.svg" alt="סגירה">
+            </button>
+            <li><a href="#">פעולות נפוצות</a></li>
+            <li><a href="#">ביטוח</a></li>
+            <li><a href="#">חיסכון ופנסיה</a></li>
+            <li><a href="#">הראל פיננסים</a></li>
+            <li><a href="#">משכנתא והלוואה</a></li>
+            <li><a><button id="dark-mode-button">מעבר בין צבעי תצוגה</button></a></li>
+        </ul>
+        <img src="images/bring_them_home.png" class="bring-them-logo" />
+    </nav>
+    <main>
+        <h1>
+            הפנסיה שלך - המומחיות שלנו !
+        </h1>
+        <div class="main-title-section">
+            <span>כבר דאגת לפנסיה שלך?</span>
+            <span>באתר שלנו תוכלו לעשות מגוון פעולות בכל רגע !</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="איזה מידע למצוא עבורך?">
+            <button id="search-button">חפש</button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm"> <!-- modal-sm כדי להקטין את גודל המודל -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">פרטים על קרן הפנסיה</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>כאן יופיעו פרטים נוספים על קרן הפנסיה, כולל איך לנהל את החיסכון הפנסיוני בצורה חכמה!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">סגור</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="subjects-container">
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>למידה על קרן הפנסיה שלך</h1>
+                <img src="images/book.png" class="li-logo" />
+                <span>הכרת הפרטים והאפשרויות בקרן הפנסיה שלך, כדי לנהל את החיסכון הפנסיוני בצורה חכמה!</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>לשינוי מסלול השקעה</h1>
+                <img src="images/stock-market.png" class="li-logo" />
+                <span>עדכון מסלול ההשקעה בקרן הפנסיה כדי להתאים את סיכון ההשקעה לצרכים שלך</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>למשיכת כספים מקרן הפנסיה</h1>
+                <img src="images/money.png" class="li-logo" />
+                <span>כיצד למשוך כספים מקרן הפנסיה במקרה של פנסיה מוקדמת או חיסכון</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>להגיש תביעת פנסיית נכות</h1>
+                <img src="images/money-back.png" class="li-logo" />
+                <span>תהליך הגשת תביעה לקבלת פנסיית נכות במקרה של אובדן כושר עבודה</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>הפקדה נוספת לעצמאיים</h1>
+                <img src="images/money-transfer.png" class="li-logo" />
+                <span>איך עצמאים יכולים להפקיד סכומים נוספים לפנסיה שלהם</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>איך עובדת קרן פנסיה?</h1>
+                <img src="images/piggy-bank.png" class="li-logo" />
+                <span>הסבר על אופן הפעולה של קרן פנסיה והחיסכון לאורך זמן</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>מי צריך קרן פנסיה?</h1>
+                <img src="images/jar.png" class="li-logo" />
+                <span>כל מי שמעסיק עובדים או עצמאי חייב לדאוג לחסכון פנסיוני</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>הצטרפות אונליין</h1>
+                <img src="images/join.png" class="li-logo" />
+                <span>אפשרות להצטרף לקרן פנסיה דרך האינטרנט בקלות ובמהירות</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>הצטרפות אונליין</h1>
+                <img src="images/partnership.png" class="li-logo" />
+                <span>יתרונות השירותים הפנסיוניים של הראל, מקצועיות וניסיון</span>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h1>אולי יעניין אותך</h1>
+                <img src="images/info.png" class="li-logo" />
+                <span>הצעות נוספות ושירותים שיכולים לעניין אותך בתחום הפנסיה</span>
+            </li>
+        </ul>
+    </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
